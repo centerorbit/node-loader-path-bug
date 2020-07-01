@@ -1,0 +1,21 @@
+{
+  "name": "build-napi-with-cmake",
+  "version": "0.0.0",
+  "description": "Build N-API native addon with CMake.",
+  "main": "hello.js",
+  "private": true,
+  "dependencies": {
+    "bindings": "~1.2.1",
+    "cmake-js": "^6.1.0",
+    "node-loader": "^1.0.0",
+    "webpack": "^4.43.0"
+  },
+  "scripts": {
+    "build:c": "cmake-js compile",
+    "build:js": "webpack",
+    "test": "node dist/index.js"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.12"
+  }
+}
